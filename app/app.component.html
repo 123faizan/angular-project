@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    routing and navigation
+  </h1>
+  <h1>{{message}}</h1>
+  
+ <nav>
+   <a routerLink="/departments" routerLinkActive="active">Departments</a>
+   <a routerLink="/employees" routerLinkActive="active">Employees</a>
+ </nav>
+ </div>
+ <app-test (childEvent)="message=$event" [parentData]="firstName"></app-test>
+ <router-outlet></router-outlet>
